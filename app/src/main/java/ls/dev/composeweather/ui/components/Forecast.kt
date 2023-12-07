@@ -41,7 +41,8 @@ fun Forecast() {
         Image(
             painter = painterResource(id = R.drawable.cloud),
             contentDescription = "Cloud icon",
-            Modifier.size(56.dp))
+            Modifier.size(56.dp)
+        )
         Text(
             "28º",
             fontSize = 24.sp,

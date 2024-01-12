@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
@@ -23,12 +24,12 @@ import ls.dev.composeweather.ui.theme.Primary
 import ls.dev.composeweather.ui.theme.Secondary
 
 @Composable
-fun Forecast() {
+fun ForecastComponent() {
     Column(
         Modifier
             .width(100.dp)
             .clip(RoundedCornerShape(16.dp))
-            .background(color = Background)
+            .background(color = Color.White)
             .padding(8.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -62,5 +63,5 @@ fun Forecast() {
 )
 @Composable
 fun ForecastPreview() {
-    Forecast()
+    ForecastComponent()
 }
